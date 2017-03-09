@@ -1,9 +1,11 @@
+
+
 Particle []  parts  = new Particle[600];
 
 void setup()
 {
   size(600, 600);
-  background((int)(Math.random()*255));
+  background(0);
 
   for ( int i=0; i<parts.length-3; i++)
   {
@@ -18,7 +20,7 @@ void setup()
 
 void draw()
 {
-  fill(0, 0, 0, 45);
+  fill(0);
   rect(-1, -1, 601, 601);
   for ( int i=0; i<parts.length; i++)
   {
